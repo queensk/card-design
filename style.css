@@ -49,7 +49,17 @@ body {
   position: relative;
   text-align: center;
 }
+.main-card-one-section-top p {
+  font-size: 1rem;
+  color: hsl(235, 100%, 87%);
+}
 
+.main-card-one-section-bottom-title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.main-card-one-section-bottom p {
+}
 .parentage-card {
   text-align: center;
   display: inline-block;
@@ -84,16 +94,22 @@ body {
 }
 
 .bold-main-span {
-  font-size: 2px;
+  font-size: 0.8rem;
+  color: hsl(246, 100%, 74%);
 }
+
 .main-card-one-section-bottom {
   position: relative;
 }
-
+.main-card-one-section-bottom {
+}
+/* main-card-one-section-bottom-title */
 .main-card-one-section-bottom p {
   text-align: center;
-  width: 80%;
-  margin: auto;
+  width: 52%;
+  margin: 3% auto;
+  font-size: 0.9rem;
+  color: hsl(235, 100%, 87%);
 }
 .main-card-two-section {
   padding: 3% 5%;
@@ -109,20 +125,30 @@ body {
 }
 
 .grad-card {
-  /* padding: 1; */
-  display: flex;
+  display: inline-block;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3%;
+  padding: 0 2%;
   margin: 10px 0;
   border-radius: 10px;
   font-weight: 400;
   font-size: 1.8rem;
+  vertical-align: middle;
+}
+.grad-card-flex {
+  display: inline;
+  position: relative;
 }
 
+.grad-card-flex img,
+.grad-card-flex span {
+  vertical-align: middle;
+}
+.grad-card-flex-percent {
+  display: inline-block;
+  margin-left: 50%;
+}
 .grad-card-img {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -144,7 +170,7 @@ body {
 }
 
 .btn {
-  margin-top: 10px;
+  margin-top: 10%;
   padding: 3% 0;
   border: none;
   width: 100%;
@@ -152,7 +178,46 @@ body {
   background-color: hsl(224, 30%, 27%);
   border-radius: 30px;
 }
-
+.btn:hover {
+  cursor: pointer;
+}
 .card-parentage {
   color: hsl(40, 4%, 68%);
+}
+
+.grad-color-reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.grad-color-memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.grad-color-verbal {
+  color: hsl(166, 100%, 37%);
+  margin: 0 3%;
+}
+
+.grad-color-visual {
+  color: hsl(234, 85%, 45%);
+  margin: 0 3%;
+}
+
+@media (max-width: 375px) {
+  .main-card-container {
+    position: static;
+    transform: none;
+  }
+  .main-card-one-section,
+  .main-card-two-section {
+    /* float: left; */
+    width: 100%;
+    /* border-top-left-radius: 0;
+    border-top-right-radius: 0; */
+    border-radius: 0 0 20px 20px;
+  }
+  .grad-card-flex-percent {
+    display: inline-block;
+    margin-left: 45%;
+  }
 }
